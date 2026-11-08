@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assumption-atlas"
+version = "0.1.0"
+description = "A system for finding hidden assumptions, contradictions, and decision opportunities in product and strategy documents."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "zkzWilliamzhou" }
+]
+license = { text = "MIT" }
+keywords = ["assumptions", "contradictions", "strategy", "decision-analysis", "ai"]
+
+[project.scripts]
+assumption-atlas = "assumption_atlas.cli:main"
+
+[tool.setuptools]
+packages = ["assumption_atlas"]
